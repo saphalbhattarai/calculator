@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table tr td{
+            border: 1px solid red;
+            padding: 25px;
+            font-size: 33px;
+            cursor: pointer;
+        }
+        table{
+            border: 1px solid green;
+        }
+            .container{
+  display: flex;
+  flex-direction: column;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            }
+          
+        
+        #demo{
+            height: 100px;
+            width: 300px;
+            border: 2px solid red;
+            font-size: 25px;
+            
+        }
+        body{
+            background-color: blanchedalmond;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div id="demo"></div>
+    <table>
+        <tr>
+            <td onclick="abc()" id="b">1</td>
+            <td>2</td>
+            <td>3</td>
+            <td onclick="abcd()" id="s">+</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>*</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>/</td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>.</td>
+            <td>%</td>
+            <td style="background-color:blue ; color: white;">=</td>
+        </tr>
+    </table>
+    </div>
+    <script>
+        // a=document.getElementById('abc');
+        // b=document.getElementById('b');
+
+        function abc(){
+            let ac=document.getElementById('b').innerHTML;
+
+document.getElementById('demo').innerHTML=ac;
+
+        }
+        function abcd(){
+            let sc=document.getElementById('s').innerHTML;
+            document.getElementById('demo').innerHTML=+ac+ +sc;
+        }
+    </script>
+</body>
+</html>
